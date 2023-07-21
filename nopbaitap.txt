@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class PS{
+	private:
+		int tuso,mauso;
+
+	public:
+	    void nhap() {
+	    	cout<<"Nhap tu so: ";
+	    	cin>>tuso;
+	    	cout<<"Nhap mau so:";
+	    	cin>>mauso;
+	    	while(mauso==0){
+	    		cout<<"Khong hop le vui long nhap lai!";
+	    		cin>>mauso;
+				}
+		}  
+		void xuat(){
+			cout<<tuso<<"/"<<mauso<<endl;
+		}  
+};
+int main(){
+	PS a;
+	a.nhap();
+	a.xuat();
+		
+}
